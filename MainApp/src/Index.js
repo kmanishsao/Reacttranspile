@@ -1,11 +1,9 @@
 import React from 'react';
 import { render} from 'react-dom';
+import Loadable from 'react-loadable';
 import MyComponent from 'my-component';
-
-
 const App = () => (
    
     <MyComponent />
-   
 );
 render(<App />, document.getElementById("root"));

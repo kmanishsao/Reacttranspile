@@ -11,6 +11,9 @@ module.exports = {
         path:path.join(process.cwd(),'dist'),
         filename:"mainApp.bundle.js"
     },
+    optimization :{
+
+    },
     module: {
         rules: [
             {
@@ -24,7 +27,9 @@ module.exports = {
             }
         ]
     },
-    plugins: [htmlWebpackPlugin],
+    plugins: [htmlWebpackPlugin,
+         
+    ],
     resolve: {
         extensions: [".js", ".jsx"]
     },
