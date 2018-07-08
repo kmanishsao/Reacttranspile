@@ -9,10 +9,13 @@ module.exports = {
     entry: path.join(process.cwd(), "./src/index.js"),
     output:{
         path:path.join(process.cwd(),'dist'),
-        filename:"mainApp.bundle.js"
+        filename:"mainApp.bundle.js",
+        chunkFilename:'[name].bundle.js'
     },
     optimization :{
-
+        splitChunks:{
+            chunks:'all'
+        }
     },
     module: {
         rules: [
