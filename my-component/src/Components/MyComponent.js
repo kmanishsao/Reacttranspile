@@ -4,7 +4,7 @@ import '../Styles/style.css';
 
 const MyComponent = () => (
  
-     <h1>Hello from My Component As of Now</h1>
+     <h1>Hello from My Component Welcome</h1>
 
 
 );

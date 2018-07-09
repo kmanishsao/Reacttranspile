@@ -8,6 +8,7 @@ module.exports = {
     devtool:'source-map',
     entry: path.join(process.cwd(), "./src/index.js"),
     output:{
+      
         path:path.join(process.cwd(),'dist'),
         filename:"mainApp.bundle.js",
         chunkFilename:'[name].bundle.js'

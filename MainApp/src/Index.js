@@ -13,12 +13,17 @@ function Loading({ error }) {
 
 
   const MyComponent = Loadable({
-    loader: () => import('my-component'),
+    loader: () => import('my-component'  /* webpackChunkName: 'MyComponent' */),
     loading: Loading
   });
   
 const App = () => (
+  <div className="copyright">
+  <h1>Welcome to Main Component</h1>
+  <p>Your are most welcome</p>
+  <br/>
+    <MyComponent /> 
+  </div>
    
-    <MyComponent />
 );
 render(<App />, document.getElementById("root"));

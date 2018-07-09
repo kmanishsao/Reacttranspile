@@ -1,7 +1,7 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-     value: true
+  value: true
 });
 
 var _react = require('react');
@@ -13,11 +13,11 @@ require('../Styles/style.css');
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var MyComponent = function MyComponent() {
-     return _react2.default.createElement(
-          'h1',
-          null,
-          'Hello from My Component'
-     );
+  return _react2.default.createElement(
+    'h1',
+    null,
+    'Hello from My Component Welcome'
+  );
 };
 
 exports.default = MyComponent;
